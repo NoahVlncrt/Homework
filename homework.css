@@ -1,0 +1,33 @@
+/* CSS declarations go here */
+
+body {
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.new-assignment {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.field {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.new-course {
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
