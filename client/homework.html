@@ -1,0 +1,12 @@
+<head>
+  <title>Your Homework</title>
+  
+</head>
+<body>
+  {{ >navbar}}
+  {{ >tracker}}
+  {{ >create}}
+  {{#each assignments}}
+    {{ >assignment}}
+  {{/each}}
+</body>
