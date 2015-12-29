@@ -31,3 +31,8 @@ body {
     padding-left: 10px;
     padding-right: 10px;
 }
+.development{
+    margin: auto;
+    width: 60%;
+    bottom: 0px;
+}
