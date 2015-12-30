@@ -1,3 +1,4 @@
 Meteor.publish("assignments", function() {
-  return Assignments.find();
+	var currentUserId = this.userId;
+  return Assignments.find({createdBy: currentUserId});
 });

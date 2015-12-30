@@ -1,5 +1,3 @@
-Meteor.subscribe("assignments");
-
 
 Template.body.helpers({
   assignments: function() {
@@ -11,6 +9,9 @@ Template.body.helpers({
 Template.body.events({
   'click .delete': function() {
     Assignments.remove(this._id);
+  },
+  'click .edit': function() {
+  	
   },
   'submit .create-assignment': function() {
     event.preventDefault();
@@ -31,6 +32,3 @@ Template.body.events({
     event.target.description.value = "";
   }
 });
-Template.body.onRendered(function() {
-  BlazeLayout.render('developmentpopup');
-})
