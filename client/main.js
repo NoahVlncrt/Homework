@@ -9,8 +9,8 @@ Template.body.helpers({
 Template.assignment.events({
 	'submit .editAssignment': function() {
   	event.preventDefault();
-  	var title = event.target.title.value;
-  	var description = event.target.title.value;
+  	var title = $(event.target.title).val();
+  	var description = $(event.target.description).val();
   	
   	Assignments.update(this._id, {$set: {
   		title: title,
@@ -31,8 +31,8 @@ Template.body.events({
   'submit .create-assignment': function() {
     event.preventDefault();
 
-    var title = event.target.title.value;
-    var description = event.target.description.value;
+    var title = $(event.target.title).val();
+    var description = $(event.target.description).val();
     var createdBy = Meteor.userId();
     var createdAt = new Date();
 
