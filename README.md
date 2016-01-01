@@ -3,7 +3,6 @@ A simple easy way to keep track of your homework!
 
 #### Road Map
 * Prevent empty form insert via validation
-* Edit existing assignments
 * Search
 * Sort by title or class
 * Progress indicator for subtasks
